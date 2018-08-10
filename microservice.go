@@ -4,15 +4,17 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+
+	"Cloud-Native-Go/api"
 )
 
 func main() {
-	http.HandleFunc("/getName", index)
-	// http.HandleFunc("/api/echo", api.EchoHandleFunc)
-	// http.HandleFunc("/api/hello", api.HelloHandleFunc)
+	http.HandleFunc("/", index)
+	http.HandleFunc("/api/echo", api.EchoHandleFunc)
+	http.HandleFunc("/api/hello", api.HelloHandleFunc)
 
-	// http.HandleFunc("/api/books", api.BooksHandleFunc)
-	// http.HandleFunc("/api/books/", api.BookHandleFunc)
+	http.HandleFunc("/api/books", api.BooksHandleFunc)
+	http.HandleFunc("/api/books/", api.BookHandleFunc)
 
 	http.ListenAndServe(port(), nil)
 }
