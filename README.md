@@ -1,4 +1,3 @@
-image:https://img.shields.io/badge/license-MIT%20License-blue.svg["MIT License", link=https://github.com/lreimer/cloud-native-javaee/blob/master/LICENSE"]
 
 = Cloud Native Go Volume 1
 
