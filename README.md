@@ -126,11 +126,4 @@ $ kubectl rollout undo deployment cloud-native-go --to-revision=0
 
 $ kubectl delete -f k8s-deployment.yml
 ```
-
-== Maintainer and Author
-
-M.-Leander Reimer (@lreimer)
-
-== License
-
-This software is provided under the MIT open source license, read the `LICENSE` file for details.
+ 
